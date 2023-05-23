@@ -176,7 +176,7 @@ footer .container {
     align-items: flex-end;
 }
 
-@media (min-width:480px) {
+@media (min-width:576px) {
     header {
         position: fixed;
         width: 100%;
@@ -255,6 +255,17 @@ footer .container {
 }
 
 /* reservado para el responsive de especializaciones */
+@media (max-width: 576px){
+    #dist-esp {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #especializaciones {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
 
@@ -319,9 +330,3 @@ footer .container {
 #op-pro a:hover {
     background-color: rgb(20,20,20);
 }
-
-/* reservado para el responsive de estudios */
-
-
-
-/* ---------------------------------------- */
