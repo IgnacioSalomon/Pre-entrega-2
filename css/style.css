@@ -335,5 +335,28 @@ footer .container {
 }
 
 .d-flex {
-    padding: 150px;
+    padding: 175px 0;
+    box-shadow: 6px 6px 9px rgba(13,13,13,0.5);
+}
+
+#body-contacto {
+    background-color: rgb(30,30,30);
+}
+
+#sidebar-container {
+    min-height: 100vh;
+}
+
+#sidebar-container .box {
+    height: 220px;
+    width: 220px;
+    background-image: url(../assets/rojo.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 0.875rem 1.25rem;
+}
+
+#sidebar-container #menu {
+    width: 18rem;
 }
