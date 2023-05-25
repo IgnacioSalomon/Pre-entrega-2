@@ -1,0 +1,362 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+}
+
+h1 { font-size: 3.5em;}
+h2 { font-size: 2.7em;}
+h3 { font-size: 2em;}
+p { font-size: 1.25em;}
+
+.container {
+    max-width: 1130px;
+    margin: auto;
+}
+
+.color-acento { color: blueviolet;}
+
+header {
+    background-color: rgb(245,245,245);
+    z-index: 5;
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: blueviolet;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 70vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/Frutas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    font-size: 5em;
+    color: white;
+}
+
+#saborista .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#sabores {
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#sabores .container{
+    padding: 100px 0;
+}
+
+#sabores h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#sabores p {
+    display: none;
+}
+
+#sabores .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/dulce.jpg");
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/salado.jpg");
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/acido.jpg");
+}
+
+.carta:nth-child(4) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/amargo.jpg");
+}
+
+.carta:nth-child(5) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/umami.jpg");
+}
+
+footer {
+    background-color: rgb(245,245,245);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width:480px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #saborista .container {
+        display: flex;
+    }
+
+    #sabores .tipos-sabores {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #sabores p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #sabores h2 {
+        margin-top: 0;
+    }
+
+    #sabores .carta {
+        padding: 50px;
+    }
+}
+
+#dist-esp {
+    padding: 155px 0;
+}
+
+#dist-esp h2 {
+    text-align: center;
+}
+
+#especializaciones {
+    background-color: rgb(30,30,30);
+}
+
+#especializaciones .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#especializaciones .img-esp {
+    background-size: cover;
+    background-position: center center;
+}
+
+#especializaciones .img-esp img {
+    height: 270px;
+    width: 476px;
+}
+
+#especializaciones .dist {
+    color: white;
+    padding: 20px 15px;
+    margin: 30px;
+    background-color: rgb(25,25,25);
+    border-radius: 15px;
+    box-shadow: 6px 6px 9px rgba(13,13,13,0.5);
+}
+
+@media screen and (max-width:480px) {
+    #especializaciones .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #especializaciones .dist h3 {
+        font-size: 1.5em;
+    }
+    
+    #especializaciones .dist p {
+        font-size: 1em;
+    }
+
+    #especializaciones .img-esp img {
+        width: 18.9em;
+        height: 13em;
+    }
+} 
+
+#estudios .container {
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+#estudios h1 {
+    text-align: center;
+}
+
+#carreras {
+    background-color: rgb(30,30,30);
+}
+
+#carreras .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding: 40px 0;
+}
+
+#carreras p {
+    background-color: rgb(25,25,25);
+    padding: 70px 40px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 9px rgba(13,13,13,0.5);
+}
+
+#carreras a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+#carreras a:hover {
+    color: blueviolet;
+}
+
+#op-pro {
+    padding: 80px;
+}
+
+#op-pro .container {
+    text-align: center;
+}
+
+#op-pro a {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    border-radius: 15px;
+    text-decoration: none;
+    box-shadow: 6px 6px 9px rgba(13,13,13,0.5);
+}
+
+#op-pro a:hover {
+    background-color: rgb(20,20,20);
+}
+
+.d-flex {
+    padding: 175px 0;
+    box-shadow: 6px 6px 9px rgba(13,13,13,0.5);
+}
+
+#body-contacto {
+    background-color: rgb(30,30,30);
+}
+
+#sidebar-container {
+    min-height: 100vh;
+}
+
+#sidebar-container .box {
+    height: 200px;
+    width: 200px;
+    background-image: url(../assets/silvina-casas.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 0.875rem 1.25rem;
+}
+
+#sidebar-container #menu {
+    width: 18rem;
+}
