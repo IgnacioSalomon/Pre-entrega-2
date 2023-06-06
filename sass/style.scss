@@ -343,20 +343,59 @@ footer .container {
     background-color: rgb(30,30,30);
 }
 
-#sidebar-container {
-    min-height: 100vh;
+.img-sc {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+
+    img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
 }
 
-#sidebar-container .box {
-    height: 200px;
-    width: 200px;
-    background-image: url(../assets/silvina-casas.jpg);
-    background-size: cover;
-    border-radius: 50%;
-    margin: 0 auto;
-    padding: 0.875rem 1.25rem;
+#sc {
+    .container {
+        padding: 116px;
+        padding-top: 0;
+
+        .silvina-casas {
+            text-align: center;
+            padding: 15px;
+            font-size: 1.3rem;
+        }
+
+        .texto-casas {
+            background-color: rgb(30,30,30);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 6px 6px 9px  rgb(13,13,13,0.5);
+            text-align: center;
+
+            p {
+                color: white;
+            }
+        }
+    }
 }
 
-#sidebar-container #menu {
-    width: 18rem;
+@media screen and (max-width: 480px) {
+    #sc{
+        .container {
+            .silvina-casas {
+                padding: 15px;
+            }
+
+            .texto-casas {
+                width: 300px;
+
+                p {
+                    padding: 0;
+                    font-size: 1rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
